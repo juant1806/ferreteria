@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>APLICACION FERRETERIA "EL TIGRE"</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/mitema.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>FERRETERIA "EL TIGRE"</h1>
+</div>
+
+<div>
+
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#" id="boton1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CONSULTA 1</h2>
+<p>Te muestra todos los productos que se encuentran en la base de datos</p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#PaginaMII" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CONSULTA 2</h2>
+<p>Te da la opcion de buscar por nombre o marca de los productos</p>
+</a>
+</li>
+
+</ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="a">
+<div>
+<img src="imagenes/tigre.jpg" width="85">
+<h4>GRACIAS POR SU PREFERENCIA</h4>
+</div>
+</div>
+</div>
+
+<!-- consulta1-->
+<div data-role="page" id="PaginaMI"  data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>titulo1</h1>
+</div>
+<div data-role="main" class="ui-content">
+ <div id="contenido">
+ </div>
+</div>
+<div data-role="footer" data-theme="a" align="center">
+<img src="imagenes/tigre.jpg" width="85">
+<h4>FERRETERIA "EL TIGRE"</h4>
+</div>
+</div>
+</div>
+<!-- fin consulta1-->
+
+<!-- consulta2-->
+<div data-role="page" id="PaginaMII" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Elige una opcion de lo que desees buscar</h1>
+</div>
+<div data-role="main" class="ui-content">
+<a href="#productos" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Productos</a>
+<a href="#marca" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Marcas</a>
+</div>
+<div data-role="footer" data-theme="a" align="center">
+<img src="imagenes/tigre.jpg" width="85">
+<h4>FERRETERIA "EL TIGRE"</h4>
+</div>
+</div>
+</div>
+<!-- fin consultya2-->
+
+<!-- mostrar productos -->
+<div data-role="page" id="productos" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>PRODUCTOS</h1>
+</div>
+<div data-role="main" class="ui-content">
+<h3>Ingresa el nombre del producto que deseas buscar:</h3>
+<input id="txtnombre" type="text" >
+<a href="#" id="btn_pro" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Buscar Producto</a>
+ <div id="contenidopro">
+ </div>
+</div>
+<div data-role="footer" data-theme="a" align="center">
+<img src="imagenes/productos.jpg" width="150">
+<h4>FERRETERIA "EL TIGRE"</h4>
+</div>
+</div>
+</div>
+<!-- fin  mostrar productos-->
+
+<!-- mostrar marcas -->
+<div data-role="page" id="marca" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>MARCAS</h1>
+</div>
+<div data-role="main" class="ui-content">
+<h3>Ingresa el nombre de la marca que deseas buscar:</h3>
+<input id="txtmarca" type="text">
+<a href="#" id="btn_marca" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Buscar Marca</a>
+ <div id="contenidomar">
+ </div>
+</div>
+<div data-role="footer" data-theme="a" align="center">
+<img src="imagenes/marcas.jpg" width="200">
+<h4>FERRETERIA "EL TIGRE"</h4>
+</div>
+</div>
+</div>
+<!-- fin  mostrar marcas-->
+
+</body>
+</html>
