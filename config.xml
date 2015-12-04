@@ -5,14 +5,14 @@
      id    = "com.phonegap.ferreteria"  
      version  = "1.0.0">  
 	 
-   <name> Aplicacion Ferreteria "El Tigre" </name>  
+   <name> Aplicacion Ferreteria </name>  
    
    <description>  
-     Catalogo de Materiales de la Feterria
+     Catalogo
    </description>  
    
    <author href="https://build.phonegap.com" email="micorreo@gmail.com">  
-      Dayn Brandon Juan Carlos Miguel Naranjo
+      DAYN 
    </author>  
    
    <!-- Personaliza la aplicacion y plataforma  -->  
