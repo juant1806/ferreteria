@@ -66,7 +66,7 @@ document.addEventListener("deviceready",function(){
 			var datosMarca = JSON.parse(respuestamarca);
 			//alert(datosProducto.productos[0].nombreProducto);
 		
-			for (var x= 0; x<datosMarca.productos.length; x++)
+			for (var x= 0; x<datosMarca.marcas.length; x++)
 			{
 				$('#contenidomar').append('<div><div><div style="display:inline-block"><img src="http://192.168.1.192/ferreteria/recursos/imagenes/fotos/'+datosMarca.marcas[x].claveProducto+'.jpg"></div><div style="display:inline-block"><h1>'+ datosMarca.marcas[x].nombreProducto +' </h1><h2> '+datosMarca.marcas[x].marcaProducto+' </h2></div></div><div><h2> '+datosMarca.marcas[x].precioUnitario+' </h2><h2> '+datosMarca.marcas[x].precioMayoreo+' </h2></div></div>');
 			}
